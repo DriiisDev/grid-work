@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper{
+    @apply grid grid-flow-col;
+}
+.wrapper > div{
+    @apply bg-slate-300 p-4;
+}
+.wrapper > div:nth-child(odd){
+    @apply bg-slate-400
+}
